@@ -3,6 +3,8 @@ function setup() {
   background('lavender');
   canvas.parent('processing');
   noLoop();
+  angleMode(DEGREES);
+  rectMode(CENTER);
   colorMode(RGB, 255, 255, 255, 1);
   fill(178, 34, 34,.5);
 }
@@ -10,9 +12,9 @@ function setup() {
 function draw() {
   noStroke();
   translate(125,125);
-  rect(0,0,200,200);
+  rect(225,225,200,200);
   
-  rotate(0);
+  rotate(45);
   
-  rect(0,0,200,200);
+  rect(225,225,200,200);
 }
