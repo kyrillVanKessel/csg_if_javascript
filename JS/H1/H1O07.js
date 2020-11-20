@@ -11,10 +11,15 @@ function setup() {
 
 function draw() {
   noStroke();
-  translate(125,125);
-  rect(225,225,200,200);
+  translate(225,-75);
+  rect(0,height/2+90,200,200);
   
+  push();
+  noStroke();
+  fill(255,225,0);
+  rect(0,height/2+90,50,50);
+pop();
   rotate(45);
-  
+
   rect(225,225,200,200);
 }
