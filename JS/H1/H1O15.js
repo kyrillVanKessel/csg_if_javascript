@@ -1,4 +1,4 @@
-var xJOS = 225;
+var xJOS = 75;
 var yJOS = 75;
 
 function setup() {
@@ -14,6 +14,10 @@ function draw() {
   background('lavender');
   text("x = " + round(xJOS),10,20);
   tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
 }
 
 function tekenJos(x,y) {
@@ -25,6 +29,7 @@ function tekenJos(x,y) {
   ellipse(0,0,50);
   fill('slategray');
   ellipse(-7,-10,17);
+  xJOS = constrain(xJOS,75,width-29);
   ellipse(7,-10,17);
   fill('white');
   ellipse(-7,-8,7,13);
@@ -36,4 +41,5 @@ function tekenJos(x,y) {
   fill('white');
   arc(0, 13, 26, 13, 0, PI, CHORD);
   pop();
+  xJOS += 3;
 }
