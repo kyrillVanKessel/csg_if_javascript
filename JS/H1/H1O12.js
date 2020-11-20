@@ -6,6 +6,7 @@ function setup() {
   canvas.parent('processing');
   textFont("Verdana");
   textSize(14);
+  frameRate(1000);
 }
 
 function draw() {
