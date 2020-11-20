@@ -35,5 +35,6 @@ function draw() {
   arc(0, 40, 80, 40, 0, PI, CHORD);
   pop();
   // einde tekenen JOS
-  
+  yJOS=random(height);
+  xJOS=random(width);
 }
