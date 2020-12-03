@@ -1,6 +1,6 @@
 var diameter = 300;
-var gorb = -diameter;
-var borb = height + diameter;
+var gorb = 0;
+var borb = 450;
 function setup() {
   canvas = createCanvas(450,450);
   canvas.parent('processing');
