@@ -8,7 +8,15 @@ function setup() {
 }
 
 function draw() {
-    for (var kolom = 0;kolom < 450;kolom += 50) {
-      rect(kolom,rij,50,50);
+    for (var raster = 0;raster < 450;raster += 50) {
+       for (var kolom = 0;kolom < 450;kolom += 50) {
+           if(kolom == 300 && raster == 150) {
+               fill('orange');
+           }
+           else {
+               fill('white');
+           }
+         rect(kolom,raster,50,50);
+       }
     }
 }
