@@ -7,8 +7,9 @@ function setup() {
 
 function draw() {
   noStroke();
-  fill('steelblue');
-  ellipse(0,0,800);
-  fill('deepskyblue');
-  ellipse(450,450,400);
+  translate(0,height/2);
+  for(var x=0; x<5; x+=1) {
+      rect(0,0,75,75);
+      translate
+  }
 }
